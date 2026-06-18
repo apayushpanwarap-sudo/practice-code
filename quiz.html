@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>HTML stands for?</h3>
+
+<button onclick="check('a')">
+Hyper Text Markup Language
+</button>
+
+<button onclick="check('b')">
+High Text Machine Language
+</button>
+
+<p id="result"></p>
+
+<script>
+
+function check(ans){
+
+if(ans=="a")
+document.getElementById("result").innerHTML=
+"Correct";
+else
+document.getElementById("result").innerHTML=
+"Wrong";
+
+}
+
+</script>
+
+</body>
+</html>
