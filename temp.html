@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="temp">
+
+<button onclick="convert()">
+Convert to Fahrenheit
+</button>
+
+<p id="out"></p>
+
+<script>
+
+function convert(){
+
+let c=document.getElementById("temp").value;
+
+let f=(c*9/5)+32;
+
+document.getElementById("out").innerHTML=
+f+" °F";
+
+}
+
+</script>
+
+</body>
+</html>
