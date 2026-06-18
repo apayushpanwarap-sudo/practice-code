@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini VS Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="icon">📁</div>
+            <div class="icon">🔍</div>
+            <div class="icon">⚙️</div>
+        </div>
+
+        <!-- Explorer -->
+        <div class="explorer">
+            <h3>Explorer</h3>
+            <ul>
+                <li>index.html</li>
+                <li>style.css</li>
+                <li>script.js</li>
+            </ul>
+        </div>
+
+        <!-- Main Area -->
+        <div class="main">
+
+            <div class="topbar">
+                Mini VS Code
+            </div>
+
+            <div class="editor-container">
+                <div class="line-numbers" id="lineNumbers">1</div>
+                <textarea id="editor" spellcheck="false"></textarea>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
