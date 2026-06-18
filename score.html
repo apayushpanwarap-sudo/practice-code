@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <h2>Student Grade Calculator</h2>
+
+    <input type="number" id="m1" placeholder="Subject 1"><br><br>
+    <input type="number" id="m2" placeholder="Subject 2"><br><br>
+    <input type="number" id="m3" placeholder="Subject 3"><br><br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function calculate() {
+            let a = Number(document.getElementById("m1").value);
+            let b = Number(document.getElementById("m2").value);
+            let c = Number(document.getElementById("m3").value);
+
+            let avg = (a+b+c)/3;
+
+            let grade = avg>=90 ? "A" :
+                        avg>=75 ? "B" :
+                        avg>=60 ? "C" : "D";
+
+            document.getElementById("result").innerHTML =
+                "Average = " + avg + "<br>Grade = " + grade;
+        }
+    </script>
+</body>
+</html>
