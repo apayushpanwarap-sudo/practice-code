@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Dataset Record Counter</h2>
+
+<input type="number" id="records">
+
+<button onclick="countData()">
+Analyze
+</button>
+
+<p id="result"></p>
+
+<script>
+
+function countData(){
+
+let n=document.getElementById("records").value;
+
+if(n<100)
+msg="Small Dataset";
+else if(n<1000)
+msg="Medium Dataset";
+else
+msg="Large Dataset";
+
+document.getElementById("result").innerHTML=
+msg;
+
+}
+
+</script>
+
+</body>
+</html>
