@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>BMI Calculator</h2>
+
+Weight:
+<input type="number" id="w"><br><br>
+
+Height(m):
+<input type="number" step="0.01" id="h"><br><br>
+
+<button onclick="bmi()">Calculate</button>
+
+<p id="ans"></p>
+
+<script>
+function bmi(){
+ let w=document.getElementById("w").value;
+ let h=document.getElementById("h").value;
+
+ let result=w/(h*h);
+
+ document.getElementById("ans").innerHTML=
+ "BMI = "+result.toFixed(2);
+}
+</script>
+
+</body>
+</html>
